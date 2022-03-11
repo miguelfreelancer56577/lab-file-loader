@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.mangelt</groupId>
+  <artifactId>file-loader</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>file-loader</name>
+  <description>This lab shows how to work with a multi-threading application to load many files in parallel to either aws s3 or azure blob storage.</description>
+</project>
