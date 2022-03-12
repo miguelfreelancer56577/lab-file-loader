@@ -2,7 +2,6 @@ package com.github.mangelt.fileloader.config;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Optional;
 import java.util.Properties;
@@ -22,7 +21,7 @@ public class PropertyConfig {
 		final File external = new File(fileName);
 		try(InputStream input = external.exists()?new FileInputStream(external): this.getClass().getClassLoader().getResourceAsStream(fileName)){
             prop.load(input);
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             log.error("There was an error to load your properties file.", ex);
         }
 	};
