@@ -7,7 +7,6 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-import com.github.mangelt.fileloader.util.PropertyConstant;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -18,11 +17,10 @@ public class AwsConfig {
 	final String secretkey;
 	final String region;
 	
-	public AwsConfig() {
-		PropertyConfig pro = new PropertyConfig();
-		accesskey = pro.getProperty(PropertyConstant.APP_CONFIG_AWS_ACCESS_KEY);
-		secretkey = pro.getProperty(PropertyConstant.APP_CONFIG_AWS_SECRET_KEY);
-		region = pro.getProperty(PropertyConstant.APP_CONFIG_AWS_REGION);
+	public AwsConfig(String accesskey, String secretkey, String region) {
+		this.accesskey = accesskey;
+		this.secretkey = secretkey;
+		this.region = region;
 	}
 	
 	public AWSCredentials awsCredencials() {

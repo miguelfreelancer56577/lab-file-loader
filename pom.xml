@@ -27,6 +27,16 @@
 	   <version>1.11.163</version>
 	</dependency>
 	<dependency>
+	    <groupId>com.azure</groupId>
+	    <artifactId>azure-storage-blob</artifactId>
+	    <version>12.6.0</version>
+	</dependency>
+	<dependency>
+		<groupId>com.microsoft.azure</groupId>
+		<artifactId>azure-storage</artifactId>
+		<version>8.0.0</version>
+	</dependency>
+	<dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
         <version>${log4j.version}</version>
@@ -93,7 +103,8 @@
 	      <version>0.8.4</version>
 	      <configuration>
 	          <excludes>
-	           	<!-- exclude>**/config/**</exclude-->
+	           	<exclude>**/AzureConfig.class</exclude>
+	           	<exclude>**/App.class</exclude>
 	          </excludes>
 	      </configuration>
 	      <executions>

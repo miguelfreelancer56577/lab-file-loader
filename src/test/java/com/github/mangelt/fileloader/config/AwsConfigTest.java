@@ -23,9 +23,13 @@ class AwsConfigTest {
 	
 	@Test
 	void getS3Client() {
-		AwsConfig aws = new AwsConfig();
-		AWSCredentials credentials = aws.awsCredencials();
-		AmazonS3 s3Client = aws.s3Client(credentials);
+		final PropertyConfig pro = new PropertyConfig();
+		final AwsConfig aws = new AwsConfig(
+				pro.getProperty(PropertyConstant.APP_CONFIG_AWS_ACCESS_KEY), 
+				pro.getProperty(PropertyConstant.APP_CONFIG_AWS_SECRET_KEY), 
+				pro.getProperty(PropertyConstant.APP_CONFIG_AWS_REGION));
+		final AWSCredentials credentials = aws.awsCredencials();
+		final AmazonS3 s3Client = aws.s3Client(credentials);
 		assertThat(s3Client).isNotNull();
 	}
 	
