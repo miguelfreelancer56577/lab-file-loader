@@ -1,0 +1,30 @@
+synchronous
+
+11:31:55.250 [main] INFO  com.github.mangelt.fileloader.SynchronousRunner - Elapsed Time in seconds: 248
+12:39:05.161 [main] INFO  com.github.mangelt.fileloader.SynchronousRunner - Elapsed Time in seconds: 369
+15:26:53.507 [main] INFO  com.github.mangelt.fileloader.SynchronousRunner - Elapsed Time in seconds: 182
+16:00:04.889 [main] INFO  com.github.mangelt.fileloader.SynchronousRunner - Elapsed Time in seconds: 300
+
+
+parallel
+
+15:33:48.973 [main] INFO  com.github.mangelt.fileloader.ParallelRunner - Elapsed Time in seconds: 184
+15:39:14.876 [main] INFO  com.github.mangelt.fileloader.ParallelRunner - Elapsed Time in seconds: 191
+15:43:15.768 [main] INFO  com.github.mangelt.fileloader.ParallelRunner - Elapsed Time in seconds: 206
+15:48:40.589 [main] INFO  com.github.mangelt.fileloader.ParallelRunner - Elapsed Time in seconds: 183
+16:01:36.362 [main] INFO  com.github.mangelt.fileloader.ParallelRunner - Elapsed Time in seconds: 186
+
+multithreading
+15:16:45.918 [main] INFO  com.github.mangelt.fileloader.MultithreadingRunner - Elapsed Time in seconds: 378
+15:22:11.721 [main] INFO  com.github.mangelt.fileloader.MultithreadingRunner - Elapsed Time in seconds: 218
+15:27:19.640 [main] INFO  com.github.mangelt.fileloader.MultithreadingRunner - Elapsed Time in seconds: 221
+15:38:02.023 [main] INFO  com.github.mangelt.fileloader.MultithreadingRunner - Elapsed Time in seconds: 192
+
+pooling process
+15:43:16.104 [main] INFO  com.github.mangelt.fileloader.MultithreadingRunner - Elapsed Time in seconds: 181
+15:48:28.855 [main] INFO  com.github.mangelt.fileloader.MultithreadingRunner - Elapsed Time in seconds: 178
+15:54:46.937 [main] INFO  com.github.mangelt.fileloader.MultithreadingRunner - Elapsed Time in seconds: 239
+
+
+
+
